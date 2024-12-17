@@ -1,0 +1,156 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: white;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#login-form, #register-form, #admin-login, #add-project-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Project List Styles */
+#projects-list, #project-list {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+}
+
+.project-item h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.project-item p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.project-item button {
+    width: auto;
+    margin-right: 10px;
+}
+
+#active-projects, #admin-actions {
+    margin-top: 30px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query for Responsiveness */
+@media screen and (max-width: 768px) {
+    .project-item {
+        width: calc(50% - 20px);
+    }
+
+    #projects-list {
+        justify-content: center;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-item {
+        width: 100%;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+}

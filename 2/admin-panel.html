@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Auction Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="admin-login.html">Admin Logout</a>
+        </nav>
+    </header>
+
+    <section id="admin-actions">
+        <h2>Add New Auction Project</h2>
+        <form id="add-project-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" required>
+
+            <label for="product-description">Product Description:</label>
+            <textarea id="product-description" required></textarea>
+
+            <label for="product-deadline">Product Deadline (in days from now):</label>
+            <input type="number" id="product-deadline" required>
+
+            <button type="submit">Add Produt</button>
+        </form>
+
+        <h2>Current Auction Projects</h2>
+        <div id="project-list">
+            <!-- List of projects will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Auction Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
